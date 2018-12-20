@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Solid demo</title>
+</head>
+<body>
+  <h1>Solid demo</h1>
+
+  <!-- Login/Logout -->
+  <p id="login">
+    You are not logged in.
+    <button>Log in</button>
+  </p>
+  <p id="logout">
+    You are logged in as <span id="user"></span>.
+    <button>Log out</button>
+  </p>
+  <!------------------>
+
+  <p>
+    <label for="profile">Profile:</label>
+    <input id="profile" style="width: 400px">
+  </p>
+
+  <hr/>
+
+  <h2>Name</h2>
+  <button id="view">Get name</button>
+  <p id="fullName">...</p>
+
+  <hr/>
+
+  <h2>Friends</h2>
+  <button id="get-friends">Get friends</button>
+  <p id="friends-msg" style="display:block">...</p>
+  <ul id="friends" style="display:none">Friends...</ul>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://solid.github.io/solid-auth-client/dist/solid-auth-client.bundle.js"></script>
+  <script src="assets/js/rdflib.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
